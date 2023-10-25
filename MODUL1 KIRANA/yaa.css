@@ -1,0 +1,29 @@
+body{
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+
+.marginRight {
+    margin-right: 5em;
+}
+
+.fontBig{
+    font-size: 4rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+}
+
+.fontMedXl{
+    font-size: 1rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+}
+.fontMid{
+    font-size: 1.2rem;
+}
+
+.video-wrapper {
+    width: 100%; 
+    height: auto;
+}

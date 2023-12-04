@@ -10,19 +10,19 @@ class ShowroomController extends Controller
   public function index()
   {
     $showroom = Showroom::all();
-    return view('showroom/index', compact('Showroom'));
+    return view('showroom.index', compact('showroom'));
   }
 
   public function create()
   {
-    return view('showroom/create');
+    return view('showroom.create');
   }
 
   public function store(Request $request)
   {
     $data = $request->all();
 
-    Mobil::create([
+    Showroom::create([
       'nama_mobil' => $data['name'],
       'brand_mobil' => $data['brand'],
       'warna_mobil' => $data['warna'],
@@ -32,4 +32,5 @@ class ShowroomController extends Controller
 
     return redirect(route('showroom.index'))->with('success', "Mobil {$data['name']} berhasil ditambahkan");
   }
+
 }
